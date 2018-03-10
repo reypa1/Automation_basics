@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Basic_testNG">
+  <test name="Practise_Test"> 
+   <classes>
+      <class name="testNG_basics.Sample_Test"/>   
+      <class name="basics.Locators"/>  
+      <class name="testNG_basics.SampleTest2"/>  
+    </classes>
+  </test> <!-- Practise_Test -->
+</suite> <!-- Basic_testNG -->

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="36481" started-at="2018-02-23T12:03:52Z" finished-at="2018-02-23T12:04:28Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="36481" started-at="2018-02-23T12:03:52Z" finished-at="2018-02-23T12:04:28Z">
+      <class name="basics.GetTitle_of_page">
+        <test-method status="PASS" signature="getTitle()[pri:0, instance:basics.GetTitle_of_page@458c1321]" name="getTitle" duration-ms="36334" started-at="2018-02-23T17:33:52Z" finished-at="2018-02-23T17:34:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTitle -->
+      </class> <!-- basics.GetTitle_of_page -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
