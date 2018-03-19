@@ -26,7 +26,7 @@ public class AutoSuggestive_dropdown
 		String script="return document.getElementById(\"fromPlaceName\").value;";
 		String text=(String) js.executeScript(script);
 		
-		int i=0;
+		int i=0; 
 		
 		while(!text.equalsIgnoreCase("Guntur"))
 		{
