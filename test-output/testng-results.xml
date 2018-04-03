@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="36481" started-at="2018-02-23T12:03:52Z" finished-at="2018-02-23T12:04:28Z">
+  <suite name="Default suite" duration-ms="69412" started-at="2018-04-03T09:23:51Z" finished-at="2018-04-03T09:25:00Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="36481" started-at="2018-02-23T12:03:52Z" finished-at="2018-02-23T12:04:28Z">
-      <class name="basics.GetTitle_of_page">
-        <test-method status="PASS" signature="getTitle()[pri:0, instance:basics.GetTitle_of_page@458c1321]" name="getTitle" duration-ms="36334" started-at="2018-02-23T17:33:52Z" finished-at="2018-02-23T17:34:28Z">
+    <test name="Default test" duration-ms="69412" started-at="2018-04-03T09:23:51Z" finished-at="2018-04-03T09:25:00Z">
+      <class name="basics.Broken_Links_test">
+        <test-method status="PASS" signature="brokenlinks()[pri:0, instance:basics.Broken_Links_test@305fd85d]" name="brokenlinks" duration-ms="69303" started-at="2018-04-03T09:23:51Z" finished-at="2018-04-03T09:25:00Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getTitle -->
-      </class> <!-- basics.GetTitle_of_page -->
+        </test-method> <!-- brokenlinks -->
+      </class> <!-- basics.Broken_Links_test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

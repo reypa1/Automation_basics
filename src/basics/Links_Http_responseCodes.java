@@ -60,7 +60,9 @@ public static void verifyLinkActive(String linkUrl)
        {
            System.out.println(linkUrl+" - "+httpURLConnect.getResponseMessage() + " - "+ HttpURLConnection.HTTP_NOT_FOUND);
         }
-    } catch (Exception e) {
+    }
+    catch (Exception e) 
+    {
        
     }
 } 
