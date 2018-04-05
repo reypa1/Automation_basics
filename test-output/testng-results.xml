@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="69412" started-at="2018-04-03T09:23:51Z" finished-at="2018-04-03T09:25:00Z">
+  <suite name="Default suite" duration-ms="40757" started-at="2018-04-05T12:12:59Z" finished-at="2018-04-05T12:13:40Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="69412" started-at="2018-04-03T09:23:51Z" finished-at="2018-04-03T09:25:00Z">
-      <class name="basics.Broken_Links_test">
-        <test-method status="PASS" signature="brokenlinks()[pri:0, instance:basics.Broken_Links_test@305fd85d]" name="brokenlinks" duration-ms="69303" started-at="2018-04-03T09:23:51Z" finished-at="2018-04-03T09:25:00Z">
+    <test name="Default test" duration-ms="40757" started-at="2018-04-05T12:12:59Z" finished-at="2018-04-05T12:13:40Z">
+      <class name="basics.CheckBox">
+        <test-method status="PASS" signature="Checkbox()[pri:0, instance:basics.CheckBox@305fd85d]" name="Checkbox" duration-ms="40678" started-at="2018-04-05T12:12:59Z" finished-at="2018-04-05T12:13:40Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- brokenlinks -->
-      </class> <!-- basics.Broken_Links_test -->
+        </test-method> <!-- Checkbox -->
+      </class> <!-- basics.CheckBox -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

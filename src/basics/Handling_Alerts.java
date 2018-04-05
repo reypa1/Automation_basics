@@ -35,6 +35,5 @@ public class Handling_Alerts
 		Thread.sleep(2000);
 		
 		driver.close();
-		
 	}
 }

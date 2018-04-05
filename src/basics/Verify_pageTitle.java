@@ -6,8 +6,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-public class Verify_pageTitle {
-
+public class Verify_pageTitle 
+{
 	@Test
 	public void Verify_Title()
 	{
@@ -22,7 +22,8 @@ public class Verify_pageTitle {
 	{
 		System.out.println("Actual title is : "+Act_title);
 	}
-	else{
+	else
+	{
 		System.out.println("Expected title is : "+Exp_title);
 	}
 	driver.close();

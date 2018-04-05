@@ -9,15 +9,15 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-public class Calendar_control {
-
-	//Maintained by pavan
+public class Calendar_control 
+{
 	@Test
 	public void calendar_control() throws Exception
 	{
 		System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
+		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.get("http://demoqa.com/datepicker/");
 		driver.findElement(By.xpath("//input[@id='datepicker1']")).click();
@@ -30,10 +30,11 @@ public class Calendar_control {
 		List<WebElement>date_picker=driver.findElements(By.xpath("//a[@class='ui-state-default']"));
 		for(int i=0;i<date_picker.size();i++)
 		{
-			String text1=date_picker.get(i).getAttribute("value");
+			WebElement elee=date_picker.get(i);
+			String text1=elee.getAttribute("value");
 			if(text1.equalsIgnoreCase("12"))
 			{
-				date_picker.get(i).click();
+				elee.click();
 				break;	
 			}
 		}

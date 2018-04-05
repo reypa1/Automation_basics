@@ -9,8 +9,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class Login {
-
+public class Login 
+{
 	public static void main(String[] args) 
 	{
 		System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver.exe");
@@ -26,7 +26,5 @@ public class Login {
 		wait.until(ExpectedConditions.elementToBeClickable(element)).click();
 		System.out.println("Title of page is : "+driver.getTitle());
 		driver.close();
-
 	}
-
 }

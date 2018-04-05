@@ -22,7 +22,7 @@ public void dran_drop()
 	Actions act=new Actions(driver);
 	WebElement source=driver.findElement(By.xpath("//div[@id='draggable']"));
 	WebElement target=driver.findElement(By.xpath("//div[@id='droptarget']"));
-	act.dragAndDrop(source, target).perform();
+	act.dragAndDrop(source, target).build().perform();
 	System.out.println("Operation success");
 	driver.close();
 }

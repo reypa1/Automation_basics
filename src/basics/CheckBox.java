@@ -9,8 +9,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-public class CheckBox {
-
+public class CheckBox 
+{
 	@Test
 	public void Checkbox()
 	{
@@ -25,13 +25,10 @@ public class CheckBox {
 	    WebElement check=checkbox.get(i);
 	    String text=check.getAttribute("value");
 	    if(text.equalsIgnoreCase("reading"))
-	    {
+	    { 
 	    	check.click();
 	    	break;
 	    }
-	    }
-	
-	    
+	    }   
 	}
-	
 }

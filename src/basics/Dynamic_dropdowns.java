@@ -9,8 +9,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-public class Dynamic_dropdowns {
-
+public class Dynamic_dropdowns 
+{
 	@Test
 	public void Dyn_dropdown()
 	{
