@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="basics.Calendar_control">
+      <class name="basics.Scroll_inView">
         <methods>
-          <include name="calendar_control"/>
+          <include name="scroll_IN"/>
         </methods>
-      </class> <!-- basics.Calendar_control -->
+      </class> <!-- basics.Scroll_inView -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

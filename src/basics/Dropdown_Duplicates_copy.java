@@ -1,7 +1,5 @@
 package basics;
-
-import java.util.ArrayList;
-import java.util.Collections;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
@@ -11,7 +9,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class Dropdown_Duplicates_copy 
@@ -23,19 +20,20 @@ public void Dropdown()
 	WebDriver driver=new ChromeDriver();
 	driver.manage().window().maximize();
 	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-	driver.get("url");
-	Select slctCountry = new Select(driver.findElement(By.id("select_id")));
-	// create an empty List
-	List<String> optionsList = new ArrayList<String>();
-	// a Set naturally removes duplicates!
-	Set<String> optionsSet = Collections.emptySet();
-	for (WebElement option : slctCountry.getOptions()) 
+	driver.get("https://www.facebook.com/");
+	WebElement element=driver.findElement(By.id("month"));
+	Select select = new Select(element);
+	
+	List<WebElement>list=select.getOptions();
+	System.out.println("Total number of elements present in a dropdown is :" +list.size());
+	
+	Set<WebElement> set=new HashSet<WebElement>();
+	
+	for(WebElement ele :list)
 	{
-	    // fill both from the same source
-	    optionsList.add(option.getText());
-	    optionsSet.add(option.getText());
+	set.add(ele);
 	}
-	// compare the two
-	Assert.assertEquals(optionsSet.size(), optionsList.size());
-}	
+	System.out.println("After removing duplicates total number of elements present in a dropdown is :" +set.size());
+	driver.close();
+	}	
 }

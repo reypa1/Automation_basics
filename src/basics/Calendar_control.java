@@ -22,7 +22,7 @@ public class Calendar_control
 		driver.get("http://demoqa.com/datepicker/");
 		driver.findElement(By.xpath("//input[@id='datepicker1']")).click();
 		WebElement datePick=driver.findElement(By.xpath("//div[@class='ui-datepicker-title']"));
-		while(!datePick.getText().contains("April"))
+		while(!datePick.getText().contains("April 2018"))
 		{
 		driver.findElement(By.xpath("//span[@class='ui-icon ui-icon-circle-triangle-e']")).click();	
 		}
