@@ -1,18 +1,14 @@
 package basics;
 
-
 import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
-
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.Test;
 
-public class Dynamic_dropdowns 
-{
-	@Test
-	public void Dyn_dropdown()
+public class Set_size {
+
+	public static void main(String[] args) 
 	{
 		System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
@@ -20,13 +16,11 @@ public class Dynamic_dropdowns
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.get("http://book.spicejet.com/");
-	
-		driver.findElement(By.xpath("//input[@id='ControlGroupSearchView_AvailabilitySearchInputSearchVieworiginStation1_CTXT']")).click();
-		
-		driver.findElement(By.xpath("//a[@value='GOI']")).click();
-		
-		driver.findElement(By.xpath("(//a[@value='DEL'])[2]")).click();
-		
-	    driver.close();
+		System.out.println(driver.manage().window().getSize());
+		Dimension d=new Dimension(480, 640);
+		driver.manage().window().setSize(d);
+		System.out.println(driver.manage().window().getSize());
+        driver.close();
 	}
+
 }

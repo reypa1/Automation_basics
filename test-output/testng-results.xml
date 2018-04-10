@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="34671" started-at="2018-04-09T11:56:07Z" finished-at="2018-04-09T11:56:42Z">
+  <suite name="Default suite" duration-ms="37454" started-at="2018-04-09T12:26:06Z" finished-at="2018-04-09T12:26:44Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="34671" started-at="2018-04-09T11:56:07Z" finished-at="2018-04-09T11:56:42Z">
-      <class name="basics.Dropdown_Duplicates_copy">
-        <test-method status="PASS" signature="Dropdown()[pri:0, instance:basics.Dropdown_Duplicates_copy@305fd85d]" name="Dropdown" duration-ms="34593" started-at="2018-04-09T11:56:07Z" finished-at="2018-04-09T11:56:42Z">
+    <test name="Default test" duration-ms="37454" started-at="2018-04-09T12:26:06Z" finished-at="2018-04-09T12:26:44Z">
+      <class name="basics.Dynamic_dropdowns">
+        <test-method status="PASS" signature="Dyn_dropdown()[pri:0, instance:basics.Dynamic_dropdowns@305fd85d]" name="Dyn_dropdown" duration-ms="37365" started-at="2018-04-09T12:26:06Z" finished-at="2018-04-09T12:26:44Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Dropdown -->
-      </class> <!-- basics.Dropdown_Duplicates_copy -->
+        </test-method> <!-- Dyn_dropdown -->
+      </class> <!-- basics.Dynamic_dropdowns -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
