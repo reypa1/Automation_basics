@@ -23,6 +23,7 @@ public class Actions_class
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.get("http://www.amazon.in");
 		
+		
 		//moving mouse to specific element
 		WebElement ele=driver.findElement(By.id("nav-link-yourAccount"));
 		Actions act=new Actions(driver);
