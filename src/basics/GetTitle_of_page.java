@@ -25,7 +25,6 @@ public class GetTitle_of_page {
 		System.out.println(text);
 		driver.navigate().to("https://www.google.com");
 		String title=driver.getTitle();
-		Capture_scrShot.Screenshot(driver, "fb_homepage");
 		System.out.println("Title of page is : " +title);
 		driver.close();
 	}

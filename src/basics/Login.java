@@ -11,9 +11,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Login 
 {
-	public static void main(String[] args) 
+	@SuppressWarnings("deprecation")
+	public static void main(String[] args) throws Throwable 
 	{
-		System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver.exe");
+		String driverpath = "C://Users//Pavan Kumar Muppa//eclipse-workspace//Drivers//chromedriver-win64//chromedriver-win64//chromedriver.exe/";
+		System.setProperty("webdriver.chrome.driver", driverpath);
 		WebDriver driver=new ChromeDriver();
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
@@ -21,9 +23,10 @@ public class Login
 		driver.get("https://www.facebook.com");
 		driver.findElement(By.id("email")).sendKeys("pavan.chowdary137@gmail.com");
 		driver.findElement(By.id("pass")).sendKeys("pa1kumar12$*");
-		WebElement element=driver.findElement(By.id("loginbutton"));
-		WebDriverWait wait=new WebDriverWait(driver,10);
-		wait.until(ExpectedConditions.elementToBeClickable(element)).click();
+		WebElement element=driver.findElement(By.id("u_0_5_bY"));
+		Thread.sleep(1000);
+		element.click();
+		Thread.sleep(1000);
 		System.out.println("Title of page is : "+driver.getTitle());
 		driver.close();
 	}

@@ -13,16 +13,16 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.Test;
 public class Links_validation 
 {
+@SuppressWarnings("deprecation")
 @Test
 public void Links()
 {
-	DesiredCapabilities cap=DesiredCapabilities.chrome();
+	DesiredCapabilities capabilities = new DesiredCapabilities();
 	//Accept SSL errors & Insecure connections
-	cap.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
-	cap.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
+	capabilities.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
 	
 	ChromeOptions options=new ChromeOptions();
-	options.merge(cap);
+	options.merge(capabilities);
 	//To maximize the window
 	options.addArguments("start-maximized");
 	
