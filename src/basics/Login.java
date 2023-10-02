@@ -27,7 +27,7 @@ public class Login
 		Thread.sleep(1000);
 		element.click();
 		Thread.sleep(1000);
-		System.out.println("Title of page is : "+driver.getTitle());
+		System.out.println("Page title is : "+driver.getTitle());
 		driver.close();
 	}
 }
