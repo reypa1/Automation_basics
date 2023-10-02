@@ -13,7 +13,7 @@ public class Launch_url_in_firefox {
 		WebDriver driver=new FirefoxDriver();
 		driver.manage().window().maximize();
 		driver.get("http://www.facebook.com");
-		System.out.println("Browser launched url succesfully");
+		System.out.println("FirefoxBrowser launched url succesfully");
 		driver.close();
 		}
 }
